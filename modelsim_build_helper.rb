@@ -9,7 +9,9 @@ else
 end
 
 modelsimWorkingDir = nil
-puts "starting build.."
+
+
+puts "build started.."
 buildOutPut = `exit | ~/intelFPGA_pro/17.1/modelsim_ase/bin/vsim -c -do  #{basePath}/build.do`
 
 errorMatchExpr = /(\*\* Error: )(.*)\((.*)\)(.*)/
